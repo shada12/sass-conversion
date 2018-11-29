@@ -85,7 +85,7 @@ ul {
     list-style: none;
 }
 
-/***************************lllll***********/
+/**************************************/
 
 
 %header-properties {
@@ -256,7 +256,7 @@ footer {
     h4 {
         font-size: 1.414rem;
         padding: 0.5rem 2rem;
-        color: #7C593C;
+        color: $dark-brown;
     }
 
     p {
@@ -417,11 +417,11 @@ footer {
 
         h1 {
             width: 100%;
-            color: #7C593C;
+            color: $dark-brown;
 
             i.fa-lg {
                 display: inline;
-                color: #7C593C;
+                color: $dark-brown;
                 vertical-align: baseline;
                 float: none;
                 font-size: 4rem;
@@ -457,12 +457,12 @@ footer {
                 line-height: 2rem;
                 min-height: 6rem;
                 border: none;
-                border-left: 1px solid #d4d4d4;
+                border-left: 1px solid $light-grey;
                 padding: 1.0rem;
-                background-color: #fff;
+                background-color: $white-color;
 
                 &:last-child {
-                    border-right: 1px solid #d4d4d4;
+                    border-right: 1px solid $light-grey;
                 }
             }
         }
@@ -522,7 +522,7 @@ footer {
         }
 
         .fa-circle {
-            color: #89C0C9;
+            color: $med-blue;
         }
 
         h4[lang=ar] {
@@ -571,7 +571,7 @@ footer {
 
         h1 {
             width: 100%;
-            color: #3a5E63;
+            color: $dark-blue;
 
             i.fa-lg {
                 display: inline;
@@ -602,7 +602,7 @@ footer {
                 line-height: 2rem;
                 min-height: 2rem;
                 border: none;
-                border-left: 1px solid #d4d4d4;
+                border-left: 1px solid $light-grey;
                 padding: 0 1.0rem;
                 margin: 1.0rem 0;
                 background-color: #fff;
