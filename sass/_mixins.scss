@@ -28,11 +28,6 @@
 
 }
 
-@mixin bg-header-colors {
-
-    background-color: $light-blue;
-    color: #222;
-}
 
 @mixin colors($val1, $val2) {
 
@@ -50,7 +45,7 @@
 
 }
 
-@mixin media-flex-properties($val1, $val2, $val3) {
+@mixin flex-properties($val1, $val2, $val3) {
 
     flex-direction: $val1;
     justify-content: $val2;

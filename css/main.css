@@ -188,10 +188,10 @@ section.content2 {
 }
 
 .row {
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  display: flex;
 }
 .row .col {
   flex-basis: 100%;
@@ -201,10 +201,10 @@ footer {
   padding: 2rem 0;
 }
 footer .row {
-  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: nowrap;
 }
 footer .row > * {
   flex-basis: 50%;

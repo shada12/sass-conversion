@@ -101,8 +101,8 @@ ul {
 .bg-header {
 
     @include bg-header-border-box;
-    @include bg-header-colors;
-
+    @include colors($light-blue, $dark-grey);
+    
 
     &:before {
         @extend %header-properties;
@@ -214,10 +214,10 @@ section.content2 {
 }
 
 .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+   
+     @include flex-properties(column, flex-start, stretch){
+            display: flex;
+        }
 
     .col {
         flex-basis: 100%;
@@ -226,11 +226,11 @@ section.content2 {
 
 footer {
     .row {
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-
+        
+        @include flex-properties(row, space-around, flex-start){
+            flex-wrap: nowrap;
+        }
+       
         > * {
             flex-basis: 50%;
             padding-bottom: 2rem;
@@ -449,7 +449,7 @@ footer {
 
         nav {
 
-            @include media-flex-properties(row, space-around, center);
+            @include flex-properties(row, space-around, center);
 
             > a {
                 flex-basis: 20%;
@@ -496,7 +496,7 @@ footer {
 
         .row {
 
-            @include media-flex-properties(row, space-around, flex-start) {
+            @include flex-properties(row, space-around, flex-start) {
 
                 flex-wrap: nowrap;
             }
@@ -545,7 +545,7 @@ footer {
     .content2 {
         .row {
 
-            @include media-flex-properties(row, center, flex-start) {
+            @include flex-properties(row, center, flex-start) {
                 flex-wrap: wrap;
             }
 
@@ -594,7 +594,7 @@ footer {
 
         nav {
 
-            @include media-flex-properties(row, space-around, center);
+            @include flex-properties(row, space-around, center);
 
             > a {
                 flex-basis: 20%;
@@ -609,7 +609,7 @@ footer {
 
                 &:first-child {
                     border-left: none;
-
+                
                 }
             }
         }
@@ -667,7 +667,7 @@ footer {
 
         .row {
 
-            @include media-flex-properties(row, space-around, flex-start) {
+            @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
 
             }
@@ -709,7 +709,7 @@ footer {
     .content1 {
         .row {
 
-            @include media-flex-properties(row, space-around, flex-start) {
+            @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
             }
 
@@ -724,7 +724,7 @@ footer {
     .content2 {
         .row {
 
-            @include media-flex-properties(row, space-around, flex-start) {
+            @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
             }
 
@@ -852,7 +852,7 @@ footer {
 
         .row {
 
-            @include media-flex-properties(row, space-evenly, flex-start) {
+            @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
             }
 
@@ -902,7 +902,7 @@ footer {
     .content1 {
         .row {
 
-            @include media-flex-properties(row, space-evenly, flex-start) {
+            @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
             }
 
@@ -918,7 +918,7 @@ footer {
     .content2 {
         .row {
 
-            @include media-flex-properties(row, space-evenly, flex-start) {
+            @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
             }
 
