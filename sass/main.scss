@@ -123,7 +123,7 @@ ul {
 
 .bg-content1 {
 
-    @include colors(#fff, #222);
+    @include colors($white-color, $dark-grey);
     font-weight: 100;
 }
 
@@ -135,7 +135,7 @@ ul {
 
 .bg-footer {
 
-    @include colors(#fff, $light-grey);
+    @include colors($white-color, $light-grey);
 }
 
 header {
@@ -183,14 +183,14 @@ header {
             flex-shrink: 0;
             text-align: center;
             text-decoration: none;
-            color: #222;
+            color: $dark-grey;
             font-size: 1.414rem;
             letter-spacing: 0.25rem;
             border: 1px solid $light-grey;
             border-bottom: none;
             padding: 1.0rem 2rem;
             line-height: 1;
-            background-color: #fff;
+            background-color: $white-color;
 
             &:hover {
                 font-weight: 700;
@@ -262,11 +262,11 @@ footer {
     p {
         font-size: 1rem;
         padding: 0.5rem 2rem;
-        color: #222;
+        color: $dark-grey;
     }
 
     .fa-circle {
-        color: #222;
+        color: $dark-grey;
     }
 
     h4[lang=de] {
@@ -575,7 +575,7 @@ footer {
 
             i.fa-lg {
                 display: inline;
-                color: #3a5E63;
+                color: $dark-blue;
                 vertical-align: baseline;
                 float: none;
                 font-size: 4rem;
@@ -605,11 +605,11 @@ footer {
                 border-left: 1px solid $light-grey;
                 padding: 0 1.0rem;
                 margin: 1.0rem 0;
-                background-color: #fff;
+                background-color: $white-color;
 
                 &:first-child {
                     border-left: none;
-                    border-left: none;
+                
                 }
             }
         }
@@ -686,7 +686,7 @@ footer {
         }
 
         .fa-circle {
-            color: #C9A689;
+            color: $light-brown;
         }
 
         h4[lang=ru] {
@@ -752,11 +752,11 @@ footer {
 
         h1 {
             width: 100%;
-            color: #7C593C;
+            color: $dark-brown;
 
             i.fa-lg {
                 display: inline;
-                color: #7C593C;
+                color: $dark-brown;
                 vertical-align: baseline;
                 float: none;
                 font-size: 4rem;
@@ -779,7 +779,7 @@ footer {
             align-items: center;
             width: 100%;
             padding: 0rem 0;
-            background-color: #fff;
+            background-color: $white-color;
 
             > a {
                 flex-basis: 20%;
@@ -787,10 +787,10 @@ footer {
                 line-height: 2rem;
                 min-height: 2rem;
                 border: none;
-                border-left: 1px solid #d4d4d4;
+                border-left: 1px solid $light-grey;
                 padding: 0 1.0rem;
                 margin: 1rem 0;
-                background-color: #fff;
+                background-color: $white-color;
 
                 &:first-child {
                     border-left: none;
@@ -874,12 +874,12 @@ footer {
             letter-spacing: 0.2rem;
 
             &:last-child {
-                color: #d4d4d4;
+                color: $light-grey;
             }
         }
 
         .fa-circle {
-            color: #89C0C9;
+            color: $med-blue;
         }
 
         h4[lang=en] {
