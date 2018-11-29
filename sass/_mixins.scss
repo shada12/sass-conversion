@@ -1,0 +1,61 @@
+@import "_variables.scss";
+
+@mixin font-stack-html {
+
+    font: {
+
+        size: 16px;
+        weight: 400;
+    }
+
+    ;
+
+    line-height: 1.6;
+}
+
+
+@mixin border-Box($val) {
+
+    -webkit-box-sizing: $val;
+    box-sizing: $val;
+}
+
+@mixin bg-header-border-box {
+
+    border-bottom: 1rem solid $med-blue;
+    border-top: 1rem solid $dark-blue;
+    position: relative;
+
+}
+
+@mixin bg-header-colors {
+
+    background-color: $light-blue;
+    color: #222;
+}
+
+@mixin colors($val1, $val2) {
+
+    background-color: $val1;
+    color: $val2;
+
+}
+
+@mixin width-margin($val1, $val2, $val3) {
+
+    width: $val1;
+    margin: $val2 $val3;
+
+    @content;
+
+}
+
+@mixin media-flex-properties($val1, $val2, $val3) {
+
+    flex-direction: $val1;
+    justify-content: $val2;
+    align-items: $val3;
+
+    @content;
+
+}
