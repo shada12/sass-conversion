@@ -54,7 +54,6 @@ ul {
   list-style: none;
 }
 
-/**************************************/
 .bg-header:after, .bg-header:before {
   content: "";
   position: absolute;
@@ -78,7 +77,6 @@ ul {
   right: 0;
 }
 
-/***********************************************/
 .bg-focal {
   background-color: #C9A689;
   color: #7C593C;

@@ -51,8 +51,6 @@ ul {
     list-style: none;
 }
 
-/**************************************/
-
 
 %header-properties {
 
@@ -81,7 +79,8 @@ ul {
     }
 }
 
-/***********************************************/
+
+
 
 .bg-focal {
     @include colors($light-brown, $dark-brown);
@@ -205,7 +204,7 @@ footer {
 
         @include flex-properties(row, space-around, flex-start) {
             flex-wrap: nowrap;
-        }
+        };
 
         > * {
             flex-basis: 50%;
