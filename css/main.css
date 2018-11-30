@@ -50,10 +50,6 @@ h4, h3, h2, h1 {
   font-weight: 700;
 }
 
-ul {
-  list-style: none;
-}
-
 .bg-header:after, .bg-header:before {
   content: "";
   position: absolute;
@@ -61,6 +57,10 @@ ul {
   height: 1rem;
   width: 30%;
   background-color: #3a5E63;
+}
+
+ul {
+  list-style: none;
 }
 
 .bg-header {
