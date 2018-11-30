@@ -27,25 +27,6 @@ dark grey   #222
 
                 DEFAULTS
 ***********************************************/
-h1 {
-  color: #C7F7FF;
-}
-
-.warnning, .error, .message {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
-}
-
-.error {
-  border-color: red;
-}
-
-.warnning {
-  border-color: yellow;
-}
-
-/********************************8**************************/
 * {
   padding: 0;
   margin: 0;
