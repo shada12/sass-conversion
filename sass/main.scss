@@ -198,13 +198,13 @@ section.content2 {
 
     @include flex-properties(column, flex-start, stretch) {
         display: flex;
+
+        .col {
+            flex-basis: 100%;
+        }
     }
 
     ;
-
-    .col {
-        flex-basis: 100%;
-    }
 }
 
 footer {
@@ -536,13 +536,14 @@ footer {
 
             @include flex-properties(row, center, flex-start) {
                 flex-wrap: wrap;
+
+                .col {
+                    flex-basis: 50%;
+                }
+
             }
 
             ;
-
-            .col {
-                flex-basis: 50%;
-            }
         }
     }
 }
@@ -664,13 +665,12 @@ footer {
             @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
 
+                .col {
+                    flex-basis: 50%;
+                }
             }
 
             ;
-
-            .col {
-                flex-basis: 50%;
-            }
         }
 
         .row.last-row {
@@ -707,15 +707,16 @@ footer {
 
             @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
+
+                .col {
+                    flex-basis: 33%;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
+
             }
 
             ;
-
-            .col {
-                flex-basis: 33%;
-                flex-grow: 1;
-                flex-shrink: 0;
-            }
         }
     }
 
@@ -724,15 +725,15 @@ footer {
 
             @include flex-properties(row, space-around, flex-start) {
                 flex-wrap: wrap;
+
+                .col {
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
             }
 
             ;
-
-            .col {
-                flex-basis: 25%;
-                flex-grow: 1;
-                flex-shrink: 0;
-            }
         }
     }
 }
@@ -857,11 +858,13 @@ footer {
 
             @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
+
+                .col {
+                    flex-basis: 50%;
+                }
             }
 
-            .col {
-                flex-basis: 50%;
-            }
+            ;
         }
 
         .row.last-row {
@@ -907,14 +910,15 @@ footer {
 
             @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
-            };
 
-
-            .col {
-                flex-basis: 30%;
-                flex-grow: 1;
-                flex-shrink: 0;
+                .col {
+                    flex-basis: 30%;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
             }
+
+            ;
         }
     }
 
@@ -923,13 +927,15 @@ footer {
 
             @include flex-properties(row, space-evenly, flex-start) {
                 flex-wrap: wrap;
-            };
 
-            .col {
-                flex-basis: 20%;
-                flex-grow: 1;
-                flex-shrink: 0;
+                .col {
+                    flex-basis: 20%;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                }
             }
+
+            ;
         }
     }
 }
